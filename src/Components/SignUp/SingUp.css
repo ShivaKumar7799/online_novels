@@ -1,0 +1,15 @@
+.signUpContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span{
+  color: blue;
+}
+
+.signUpBtn{
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}

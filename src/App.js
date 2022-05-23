@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import Login from './Components/Login/Login';
+import {BrowserRouter,Routes, Route} from 'react-router-dom'
+import SignUp from './Components/SignUp/SignUp';
 import './App.css';
+import HomePage from './Components/HomePage/HomePage';
+import BookPage from './Components/BooksPage/BookPage';
+import { createContext, useState } from 'react';
+
+export const AppContext = createContext(null)
 
 function App() {
+  const [data,setData] = useState(null);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+      <AppContext.Provider value= {{data,setData}} >
+          <BrowserRouter>
+              <Routes>
+                <Route path = "/" element = { <HomePage />} />
+                <Route path='/login' exact element = { <Login />} />
+                <Route path = "/signUp" element = { <SignUp /> } />
+                <Route path = "/novels" element = { <BookPage />} />
+              </Routes>
+          </BrowserRouter>
+      </AppContext.Provider>
+   </>
   );
 }
 

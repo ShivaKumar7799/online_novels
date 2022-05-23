@@ -1,0 +1,32 @@
+.loginContainer{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+#loginHere{
+  margin-bottom: 50px;
+}
+
+.inputDataFields{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+label{
+  font-weight: 600;
+}
+input{
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.loginBtn{
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+}

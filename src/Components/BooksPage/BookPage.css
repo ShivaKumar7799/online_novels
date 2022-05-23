@@ -1,0 +1,11 @@
+.logoutBtn{
+  display: flex;
+  background-color: skyblue;
+  justify-content: flex-end;
+  padding: 5px;
+  margin: 0px 40px 10px;
+}
+#logoutButton{
+  border: none;
+  background-color: skyblue;
+}
