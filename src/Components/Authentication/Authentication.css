@@ -1,0 +1,12 @@
+.loginDiv , .signUpDiv{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.loginText,.signUpText{
+  font-size: 14px;
+  padding: 2px;
+  margin: 0px;
+  padding-right: 10px;
+}

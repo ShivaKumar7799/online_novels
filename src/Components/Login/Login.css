@@ -1,13 +1,13 @@
 .loginContainer{
-  height: 90vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 150px;
+  margin-bottom: 50px;
 }
 
 #loginHere{
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .inputDataFields{

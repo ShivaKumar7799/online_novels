@@ -5,7 +5,7 @@ function Loader() {
   return (
     <div>
        <center>
-       <img src = {LoaderImage} alt='loader' />
+       <img style={{width : "50%", height: "50%", marginTop : "50px"}} src = {LoaderImage} alt='loader' />
        </center>
     </div>
   )

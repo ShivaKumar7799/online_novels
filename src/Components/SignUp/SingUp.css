@@ -3,7 +3,10 @@
   flex-direction: column;
   align-items: center;
 }
-
+.signUpHeading{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 span{
   color: blue;
 }

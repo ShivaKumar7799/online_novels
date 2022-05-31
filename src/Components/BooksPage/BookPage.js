@@ -6,7 +6,7 @@ import axios from 'axios'
 import { AppContext } from '../../App'
 import Loader from '../Loader/Loader'
 import './BookPage.css'
-
+import {auth} from "../FireBase/FireBase"
 
 function BookPage() {
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ function BookPage() {
   return (
     <div>
         <div className='logoutBtn' > 
-           <button id='logoutButton' onClick={() => navigate('/')} > Logout</button>
+           <button id='logoutButton' onClick={() => auth.signOut()} > Logout</button>
         </div>
 
         { data ? data.map((item, index) => <BookComponent index = {index} data = {data} key={index} />) :  <Loader />}
